@@ -22,10 +22,6 @@ const db = knex({
     }
 });
 
-db.select('*').from('users').then(data => {
-    console.log(data);
-});
-
 const app = express();
 
 app.use(cors())
